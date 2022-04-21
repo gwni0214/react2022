@@ -1,55 +1,31 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import propType from "prop-types";
+import {Link} from "react-router-dom";
 
-function RefTable({id, title, desc}){
-    return (
-        <>
-            <tr>
-                <th>{id}</th>
-                <th>{title}</th>
-                <td>
-                <Link to={{
-                    pathname : "/refer-detail",
-                    state: {id, title, desc},
-                }}>
-                    {desc.slice(0,180)}
-                </Link>
-                </td>
-            </tr>
-        </>
-    )
+
+
+
+function ReferenceCont({id, title, desc, use, desc2, element,tag,version,view,image,link,definition,Accessibility,mdn,w3c}) {
+  return (
+    <li>
+        <Link to={{
+            pathname: "refer-detail",
+            state: {id, title, desc, use, desc2, element,tag,version,view,image,link,definition,Accessibility,mdn,w3c}
+        }}>
+            <span className='num'>{id}</span>
+            <span className='title'>{title}</span>
+            <span className='desc'>{desc}</span>
+            <span className='use'>{use}</span>            
+        </Link>
+    </li>
+  )
 }
 
-
-function ReferenceCont(props) {
-  return (
-    <section className={`reference__cont ${props.color}`}>
-        <div className='container'>
-            <div className="reference__inner">
-                <div className='reference'>
-                    <h3>CSS REFERENCE</h3>                    
-                    <table>
-                        <colgroup>
-                            <col style={{width: "10%"}}/>
-                            <col style={{width: "20%"}}/>
-                            <col style={{width: "70%"}}/>
-                        </colgroup>
-                        <tbody>
-                            {props.refer.map(refers=>(
-                                <RefTable 
-                                id={refers.id}
-                                title={refers.title}
-                                desc={refers.desc}
-                                key={refers.id}
-                                />
-                            ))}
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </section>
-  )
+ReferenceCont.propType = {
+    id:propType.number.isRequired,
+    title:propType.string.isRequired,
+    desc:propType.string.isRequired,
+    use:propType.string.isRequired,
 }
 
 export default ReferenceCont
