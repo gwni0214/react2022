@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.49e29c6d.css",
+    "main.js": "/static/js/main.7fac8f1b.js",
+    "static/media/Chosunilbo_myungjo.woff": "/static/media/Chosunilbo_myungjo.80ab9ff9bb083c5c4f61.woff",
+    "static/media/S-CoreDream-8Heavy.woff": "/static/media/S-CoreDream-8Heavy.bda0c9c102990f18a5c3.woff",
+    "static/media/S-CoreDream-7ExtraBold.woff": "/static/media/S-CoreDream-7ExtraBold.7d4b5dea09a2d8bff5f9.woff",
+    "static/media/S-CoreDream-5Medium.woff": "/static/media/S-CoreDream-5Medium.c2081f4071af15d4d573.woff",
+    "static/media/S-CoreDream-3Light.woff": "/static/media/S-CoreDream-3Light.22b7af16e237e8d6a383.woff",
+    "static/media/S-CoreDream-9Black.woff": "/static/media/S-CoreDream-9Black.82fee75b7b67ecba1b43.woff",
+    "static/media/S-CoreDream-2ExtraLight.woff": "/static/media/S-CoreDream-2ExtraLight.72d63c82a2889a3ede64.woff",
+    "static/media/S-CoreDream-6Bold.woff": "/static/media/S-CoreDream-6Bold.cd51183a323a1e86ea54.woff",
+    "static/media/S-CoreDream-4Regular.woff": "/static/media/S-CoreDream-4Regular.ad4f5df0f24088f2b001.woff",
+    "static/media/S-CoreDream-1Thin.woff": "/static/media/S-CoreDream-1Thin.50911876e0ba59a56032.woff",
+    "static/media/saol.eot": "/static/media/saol.50ba3f2cb2ed24f3f516.eot",
+    "static/media/saol.ttf": "/static/media/saol.fbd595ef53bad8ea2e37.ttf",
+    "static/media/saol.woff": "/static/media/saol.377f197d251f717d09a9.woff",
+    "static/media/saol.woff2": "/static/media/saol.bba52445623d3a1fe31b.woff2",
+    "index.html": "/index.html",
+    "main.49e29c6d.css.map": "/static/css/main.49e29c6d.css.map",
+    "main.7fac8f1b.js.map": "/static/js/main.7fac8f1b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.49e29c6d.css",
+    "static/js/main.7fac8f1b.js"
+  ]
+}

@@ -1,0 +1,112 @@
+.about__cont {
+    padding-bottom: 20vh;
+}
+.light.about__cont {
+    background: var(--light_bg);
+}
+
+.about_item:first-child {
+    padding-bottom: 20vh;
+    .img {
+        width: 100%;
+        margin-bottom: 5vh;
+    }
+    .text {
+        font-family: "Chosunilbo";
+        h3 {
+           font-size: 1rem;
+           margin-bottom: 3vh;
+        }
+        p {
+            width: 100%;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+    }    
+}
+.about_item:nth-child(2) {
+    padding-bottom: 20vh;
+    display: flex;
+    justify-content: space-between;    
+    .img {
+        width: 57%;
+        margin-bottom: 5vh;        
+    }
+    .text {
+        width: 40%;
+        
+        font-family: "Chosunilbo";
+        h3 {
+           font-size: 1rem;
+           margin-bottom: 3vh;
+        }
+        p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+    }    
+}
+.about_item:nth-child(3) {
+    // padding-bottom: 20vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    flex : 0 0 50%;
+    .img {
+        width: 60%;
+        margin-bottom: 5vh;        
+    }
+    .text {
+        width: 38%;
+        font-family: "Chosunilbo";
+        h3 {
+           font-size: 1rem;
+           margin-bottom: 3vh;
+        }
+        p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+    }    
+}
+@media (max-width: 1000px){
+    .about_item:first-child {        
+        .text {                      
+            p {
+                width: 100%;
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+        }    
+    }
+    .about_item:nth-child(2) {
+        padding-bottom: 20vh;
+        display: flex;
+       flex-direction: column;              
+        .img {
+            width: 100%;
+            margin-bottom: 5vh;            
+        }
+        .text {
+            width: 100%;                                  
+        }    
+    }
+    .about_item:nth-child(3) {
+        // padding-bottom: 20vh;
+        display: flex;
+        flex-direction: column;        
+        .img {
+            width: 100%;
+            margin-bottom: 5vh;            
+        }
+        .text {
+            width: 100%;                        
+        }    
+    }
+    
+}
+//어바웃 애니메이션
+.about__inner {
+    opacity: 0;
+    transform: translateY(100px);
+}

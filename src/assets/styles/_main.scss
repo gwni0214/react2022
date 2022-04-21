@@ -1,0 +1,22 @@
+.main__cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--black);
+
+    .main__inner {                                 
+        font-size: 10vw;
+        line-height: 0.85;
+        font-family: "Saol";
+        color: var(--white);
+        text-transform: uppercase;                 
+    }
+}
+
+//main Animation
+.main__inner > div {
+    opacity: 0;
+    transform: translateY(100px);
+}
+

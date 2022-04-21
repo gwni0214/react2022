@@ -1,0 +1,108 @@
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: var(--white);
+    border-top: 1px solid var(--dark_border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--black);  
+    font-family: "Rajdhani";
+    z-index: 1000;
+
+    div {
+        text-align: center;
+        padding: 1.4rem;
+    }
+    a {
+        position: relative;
+        &:hover {
+            color: var(--hover_line);
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            left: 1rem;
+            bottom: 0;
+            width: calc(100% - 1.6rem);
+            height: 1px;
+            background: var(--white);
+            transform: scaleX(0);
+            transition: all 0.3s;
+        }
+        &:hover::before {
+            transform: scaleX(1);
+            color: var(--hover_line);
+        }
+    }
+    
+      
+    h4,ul {
+        display: inline-block;        
+    }
+    h4 {
+        font-weight: 600;
+        padding: 0 0.6em;
+        text-transform: capitalize;
+    }
+    div:nth-child(1) {
+        flex: 1 1 25%;
+        border-right: 1px solid var(--dark_border);
+    }
+    div:nth-child(2) {
+        flex: 1 1 20%;
+        border-right: 1px solid var(--dark_border);
+    }
+    div:nth-child(3) {
+        flex: 1 1 55%;       
+            li {
+                display: inline;
+                a {
+                    display: inline-block;
+                    padding: 0 0.6em;  
+                    position: relative;              
+                }                
+            }                                      
+    }
+}
+
+.light#footer {
+    background-color: var(--light_bg);
+    border-top-color: var(--light_border);
+    h4 {
+        color: var(--black);
+    }
+    a {
+        color: var(--black);
+
+        &::before {
+            background: var(--black);
+        }
+    }
+    div {
+        border-right-color: var(--light_border);
+    }
+}
+//미디어 쿼리
+@media (max-width: 1010px){
+    #footer {
+        div:nth-child(1) {
+            h4{
+                display: none;
+            }
+            
+        }
+        div:nth-child(2) {
+            display: none;
+        }
+        div:nth-child(3) {
+            display: none;
+        }
+    }
+}
+//footer Animation 
+#footer {
+    bottom: -100%;
+}
