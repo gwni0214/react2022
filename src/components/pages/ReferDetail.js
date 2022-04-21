@@ -50,6 +50,7 @@ class ReferDetail extends React.Component {
         } else {
             return (
                 <>
+                
                         <Header color="light" />
                         <Contents>            
                         <section className="reference__cont">
