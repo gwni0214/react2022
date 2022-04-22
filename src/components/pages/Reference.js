@@ -77,7 +77,8 @@ class Reference extends React.Component {
     }
     componentDidMount(){
             setTimeout(()=>{
-                document.getElementById("loading").classList.remove("loading__active"); 
+                document.getElementById("loading").classList.remove("loading__active");
+                document.querySelector("body").style.background = "#000";    
                 this.getRefers();
             },2000)
     }

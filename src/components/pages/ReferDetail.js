@@ -51,7 +51,7 @@ class ReferDetail extends React.Component {
             return (
                 <>
                 
-                        <Header color="light" />
+                        <Header  />
                         <Contents>            
                         <section className="reference__cont">
                             <div className="container">
@@ -90,20 +90,27 @@ class ReferDetail extends React.Component {
                                                 </tbody>
                                             </table>                                        
                                     </div>
+                                    <h3>정의</h3>
+                                    {location.state.definition.map(el => (                                                                                
+                                       <p key={el}>{el}</p>                                        
+                                    ))}                                                                    
                                     <h3>접근성</h3>
-                                    <p>{location.state.Accessibility}</p>
+                                    {location.state.Accessibility.map(el => (                                                                                
+                                       <p key={el}>{el}</p>                                        
+                                    ))} 
                                     <h3>MDN</h3>
-                                    <p>{location.state.mdn}</p>
+                                    <p><a href={location.state.mdn}>{location.state.mdn}</a></p>
                                     <h3>W3C</h3>
-                                    <p>{location.state.w3c}</p>
+                                    <p><a href={location.state.w3c}>{location.state.w3c}</a></p>                                  
                                 </div>
                             </div>
                         </section>
                         </Contents>           
-                        <Footer color="light" />
+                        <Footer  />
                     </>
             )
         }
     }
+    
 }
 export default ReferDetail
