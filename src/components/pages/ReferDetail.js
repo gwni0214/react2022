@@ -91,17 +91,21 @@ class ReferDetail extends React.Component {
                                             </table>                                        
                                     </div>
                                     <h3>정의</h3>
+                                    <p>
                                     {location.state.definition.map(el => (                                                                                
-                                       <p key={el}>{el}</p>                                        
-                                    ))}                                                                    
+                                       <li key={el}>{el}</li>                                        
+                                    ))}
+                                    </p>                                                                    
                                     <h3>접근성</h3>
+                                    <p>
                                     {location.state.Accessibility.map(el => (                                                                                
-                                       <p key={el}>{el}</p>                                        
-                                    ))} 
+                                       <li key={el}>{el}</li>                                        
+                                    ))}
+                                    </p> 
                                     <h3>MDN</h3>
-                                    <p><a href={location.state.mdn}>{location.state.mdn}</a></p>
+                                    <p><a href={location.state.mdn}>MDN</a></p>
                                     <h3>W3C</h3>
-                                    <p><a href={location.state.w3c}>{location.state.w3c}</a></p>                                  
+                                    <p><a href={location.state.w3c}>W3C</a></p>                                  
                                 </div>
                             </div>
                         </section>
