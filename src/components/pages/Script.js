@@ -59,7 +59,7 @@ function Script(){
             redirect: 'follow'
           };
           
-          fetch(`https://api.themoviedb.org/3/search/movie?api_key=85d2aed02c5461f46270c2256b9ce40b&query=${query}`, requestOptions)
+          fetch(`https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_MOVIE_API}&query=${query}`, requestOptions)
             .then(response => response.json())
             .then(result => setVideos(result.results))
             .catch(error => console.log('error', error));
@@ -71,7 +71,7 @@ function Script(){
         redirect: 'follow'
       };
       
-      fetch(`https://api.themoviedb.org/3/search/movie?api_key=85d2aed02c5461f46270c2256b9ce40b&query=spider-man-no-way-home`, requestOptions)
+      fetch(`https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_MOVIE_API}&query=spider-man-no-way-home`, requestOptions)
         .then(response => response.json())
         .then(result => {
             setVideos(result.results)
