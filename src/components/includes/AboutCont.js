@@ -39,8 +39,8 @@ const AboutCont = (props) => {
     <section className={`about__cont ${props.color}`}>
         <div className="container">
             <div className="about__inner">
-                {aboutText.map(txt=>(
-                    <AboutInfo title={txt.title} desc={txt.desc} img={txt.img} key={txt.text} />
+                {aboutText.map((txt, index)=>(
+                    <AboutInfo title={txt.title} desc={txt.desc} img={txt.img} key={index} />
                 ))}                                
             </div>
         </div>                    

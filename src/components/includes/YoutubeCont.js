@@ -1,11 +1,14 @@
 import React from 'react'
+import YoutubeList from './YoutubeList'
 
-function YoutubeCont() {
+
+function YoutubeCont(props) {
   return (
     <section className="youtube__cont">
         <div className='container'>
-            <div className="youtube__cont__inner">
-                <div className='youtube'></div>
+            <div className="youtube__inner"> 
+                          
+                <YoutubeList items={props.lists} />
             </div>
         </div>
     </section>

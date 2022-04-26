@@ -1,34 +1,25 @@
-import React from "react";
-import Header from "../layout/Header";
-import Contents from "../layout/Contents";
-import Footer from "../layout/Footer";
-import ContContact from "../layout/ContContact";
-import ContTitle from "../layout/ContTitle";
-import YoutubeCont from "../includes/YoutubeCont";
-import Loading from "../basics/Loading";
+import React, { useEffect, useState } from 'react'
+import ContContact from '../layout/ContContact'
+import Contents from '../layout/Contents'
+import ContTitle from '../layout/ContTitle'
+import Footer from '../layout/Footer'
+import Header from '../layout/Header'
+import YoutubeList from '../includes/YoutubeList'
+import YoutubeSearch from '../includes/YoutubeSearch'
+import Loading from '../basics/Loading'
 import { gsap } from "gsap";
 
-// function Youtube(){
-//     return (
-//         <>
-//             <Header />
-//             <Contents>  
-//             <ContTitle title={["coding", "youtuber"]}/>          
-//                 <YoutubeCont /> 
-//                 <ContContact />
-//             </Contents>           
-//             <Footer />
-//         </>
-//     )
-// }
+//npm i dotenv
 
-class Youtube extends React.Component {
-    state = {
-        isLoading : true,
-    }
+function Youtube() {
+    
+    
+    const [videos, setVideos] = useState([]);
 
-    mainAnimation = () => {
+    const mainAnimation = ()=>{
+        
         setTimeout(()=>{
+            document.getElementById("loading").classList.remove("loading__active");
             gsap.to("#header", {
                 duration: 0.8,
                 top: 0,
@@ -54,45 +45,67 @@ class Youtube extends React.Component {
                 delay:1.5,
                 ease: "circ.out"
             });
-                        
-        },10)        
-    }
-    getMain =() =>{
-        setTimeout(()=>{
-            console.log("두번째 시작");
-            this.setState({isLoading: false});
-            this.mainAnimation();
-        },1600);
-    }
-    
-    componentDidMount(){
-        setTimeout(()=>{
-            console.log("첫번째 시작");
-            document.getElementById("loading").classList.remove("loading__active");
-            document.querySelector("body").style.background = "#000";
-            this.getMain();            
+            gsap.to(".youtube__inner", {
+                duration: 1.6,              
+                y:0,
+                opacity:1,
+                delay:2.4,
+                ease: "circ.out"
+            });
+
         },2000)
     }
 
-    render(){
-        const {isLoading} = this.state;
-        return (
-            <>
-                {isLoading ? (
-                    <Loading />
-                ) : (
-                    <>
-                        <Header />
-                        <Contents>  
-                        <ContTitle title={["coding", "youtuber"]}/>          
-                            <YoutubeCont /> 
-                            <ContContact />
-                        </Contents>           
-                        <Footer />
-                    </>
-                )}
-            </>
-        )
+    const search = (query)=>{
+        var requestOptions = {
+            method: 'GET',
+            redirect: 'follow'
+          };
+          
+          fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=28&q=${query}&key=${process.env.REACT_APP_API}`, requestOptions)
+            .then(response => response.json())
+            .then(result => setVideos(result.items))
+            .catch(error => console.log('error', error));
     }
+    useEffect(()=>{
+        var requestOptions = {
+            method: 'GET',
+            redirect: 'follow'
+            };
+            
+            fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=28&q=blackpink&key=${process.env.REACT_APP_API}`, requestOptions)
+            .then(response => response.json())
+            .then(result => {
+                setVideos(result.items);
+                mainAnimation();
+                }
+            )
+            .catch(error => console.log('error', error));
+    }, []);
+
+
+    
+
+  return (
+      
+        <>
+            <Loading />
+            <Header  />
+            <Contents>  
+            <ContTitle title={["youtube", "reference"]}/>
+            <section className="youtube__cont">       
+            <div className="youtube__inner"> 
+                <YoutubeSearch onSearch={search}/>          
+                <YoutubeList videos={videos} />
+            </div>
+            </section>
+                <ContContact />
+            </Contents>           
+            <Footer  />
+        </>
+       
+    
+  )
 }
-export default Youtube;
+
+export default Youtube

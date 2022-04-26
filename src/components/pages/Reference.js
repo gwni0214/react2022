@@ -72,9 +72,9 @@ class Reference extends React.Component {
         setTimeout(()=>{
             this.setState({refers: refer, isLoading: false});
             this.mainAnimation();
-        },1600)
-       
+        },1600)       
     }
+    
     componentDidMount(){
             setTimeout(()=>{
                 document.getElementById("loading").classList.remove("loading__active");
