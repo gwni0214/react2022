@@ -76,12 +76,13 @@ function Script(){
         .then(result => {
             setVideos(result.results)
             mainAnimation();
+            document.querySelector("body").style.background = "var(--light_bg)";
         })        
         .catch(error => console.log('error', error));
     }, []);
     return (
         <>
-         <Loading />
+         <Loading color="light" />
             <Header color="light"/>
             <Contents>
             <ContTitle title={["script", "book"]} color="light"/>

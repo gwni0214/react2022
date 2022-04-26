@@ -114,6 +114,11 @@
         }
     }
 }
+@media (max-width:800px){
+    .movie__list ul li {
+        flex: 1 1 43%;
+    }
+}
 @media(max-width:1000px){
     .script__inner {
         .desc {
