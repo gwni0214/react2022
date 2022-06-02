@@ -17,6 +17,7 @@ class ReferDetail extends React.Component {
     if (location.state === undefined) {
       history.push("/reference");
     }
+    this.toTop();
     this.mainAnimation();
   }
 
@@ -40,11 +41,10 @@ class ReferDetail extends React.Component {
         delay: 1,
         ease: "circ.out",
       });
-      gsap.to(window, {
-        duration: 1,
-        scrollTo: 100,
-      });
     }, 10);
+  };
+  toTop = () => {
+    window.scrollTo(0, 0);
   };
   render() {
     const { location } = this.props;
