@@ -243,6 +243,188 @@
         ],
         "mdn": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div",
         "w3c": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-div-element"
+      },
+      {
+        "id": 11,
+        "title": "<em>",
+        "desc": "<em> 태그는 텍스트를 강조할 때 설정합니다.",
+        "desc2": "<em> 태그는 텍스트를 강조할 때 설정합니다.",
+        "element": "인라인 요소(Inline Element)",
+        "tag": "닫는 태그 사용(<em> ~ </em>)",
+        "version": "HTML4",
+        "view": "기울임꼴로 표시",
+        "use": "★★★★★",
+        "image": "",
+        "link": "",
+        "definition": [
+          "<em> 태그는 텍스트를 강조할 때 설정합니다.",
+          "<em> 태그는 기울임꼴로 표기됩니다. 기울임꼴을 사용하기 위해 사용하는 하는 것은 적절하지 않습니다. CSS font-style: italic으로 설정합니다.",
+          "<em> 태그보다 중요성을 강조하기 위해서는 <strong> 태그를 사용합니다."
+        ],
+        "Accessibility": [
+          "<em> 태그는 기울임꼴로 표기됩니다. 기울임꼴을 사용하기 위해 사용하는 하는 것은 적절하지 않습니다. CSS font-style: italic으로 설정합니다."
+        ],
+        "mdn": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dfn",
+        "w3c": "https://www.w3schools.com/tags/tag_em.asp"
+      },
+      {
+        "id": 12,
+        "title": "<fieldset>",
+        "desc": "<fieldset> 태그는 폼 컨트롤 요소의 내부 영역을 설정합니다.",
+        "desc2": "<fieldset> 태그는 폼 컨트롤 요소의 내부 영역을 설정합니다.",
+        "element": "블록 요소(Block Element)",
+        "tag": "닫는 태그 사용(<fieldset> ~ </fieldset>)",
+        "version": "HTML4",
+        "view": "2px 너비의 groove 테두리",
+        "use": "★★★★★",
+        "image": "",
+        "link": "",
+        "definition": [
+          "<fieldset> 태그는 폼 컨트롤 요소의 내부 영역을 설정합니다.",
+          "<fieldset> 태그는 폼 요소의 여러 컨트롤과 <label>을 그룹화 하는데 사용합니다.",
+          "<fieldset> 태그는 폼 요소의 내부 영역 설명을 <legend> 요소로 설정합니다.",
+          "<fieldset> 태그는 HTML5에서 disabled, form, name 속성이 추가되었습니다."
+        ],
+        "Accessibility": [
+          "<fieldset> 태그는 폼 요소의 내부 영역 설명을 <legend> 요소로 설정합니다."
+        ],
+        "mdn": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset",
+        "w3c": "https://html.spec.whatwg.org/multipage/form-elements.html#the-fieldset-element"
+      },
+      {
+        "id": 13,
+        "title": "<figure>",
+        "desc": "<figure> 태그는 인용, 도표, 사진, 코드 등의 독립적인 콘텐츠를 설정합니다.",
+        "desc2": "<figure> 태그는 인용, 도표, 사진, 코드 등의 독립적인 콘텐츠를 설정합니다.",
+        "element": "블록 요소(Block Element)",
+        "tag": "닫는 태그 사용(<figure> ~ </figure>)",
+        "version": "HTML5",
+        "view": "2px 너비의 groove 테두리",
+        "use": "★★★★☆",
+        "image": "",
+        "link": "",
+        "definition": [
+          "<figure> 태그는 인용, 도표, 사진, 코드 등의 독립적인 콘텐츠를 설정합니다.",
+          "<figure> 태그는 <figcaption> 요소를 사용해 설명을 포함할 수 있습니다."
+        ],
+        "Accessibility": [
+          "<figure> 태그는 <figcaption> 요소를 사용해 설명을 포함할 수 있습니다."
+        ],
+        "mdn": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure",
+        "w3c": "https://www.w3schools.com/tags/tag_figure.asp"
+      },
+      {
+        "id": 14,
+        "title": "<form>",
+        "desc": "<form> 태그는 웹 서버에 정보를 제공하는 폼 컨트롤 유형을 설정합니다.",
+        "desc2": "<form> 태그는 웹 서버에 정보를 제공하는 폼 컨트롤 유형을 설정합니다.",
+        "element": "인라인 요소(Inline Element)",
+        "tag": "닫는 태그 사용(<form> ~ </form>) ",
+        "version": "HTML4",
+        "view": "-",
+        "use": "★★★★★",
+        "image": "",
+        "link": "",
+        "definition": [
+          "<form> 태그는 웹 서버에 정보를 제공하는 폼 컨트롤 유형을 설정합니다.",
+          "<form> 태그는 사용자가 폼을 입력한 후 버튼을 누르면 정보가 웹 서버에 전송됩니다."
+        ],
+        "Accessibility": [
+          "<form> 태그는 웹 서버에 정보를 제공하는 폼 컨트롤 유형을 설정합니다."
+        ],
+        "mdn": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form",
+        "w3c": "https://www.w3schools.com/tags/tag_form.asp"
+      },
+      {
+        "id": 15,
+        "title": "<head>",
+        "desc": "<head> 태그는 제목과 스크립트, 스타일 시트, 메타 정보 등을 제공합니다.",
+        "desc2": "<head> 태그는 제목과 스크립트, 스타일 시트, 메타 정보 등을 제공합니다.",
+        "element": "블록 요소(Blockk Element)",
+        "tag": "닫는 태그 사용(<head> ~ </head>)",
+        "version": "HTML4",
+        "view": "-",
+        "use": "★★★★★",
+        "image": "",
+        "link": "",
+        "definition": [
+          "<head> 태그는 제목과 스크립트, 스타일 시트, 메타 정보 등을 제공합니다.",
+          "HTML5를 지원하는 브라우저에서는 <head> 태그가 생략된 경우 자동으로 생성합니다."
+        ],
+        "Accessibility": [
+          "HTML5를 지원하는 브라우저에서는 <head> 태그가 생략된 경우 자동으로 생성합니다."
+        ],
+        "mdn": "https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML",
+        "w3c": "https://www.w3schools.com/tags/tag_head.asp"
+      },
+      {
+        "id": 16,
+        "title": "<header>",
+        "desc": "<header> 태그는 사이트의 소개 및 메뉴 그룹을 나타내는 섹션을 설정합니다.",
+        "desc2": "<header> 태그는 사이트의 소개 및 메뉴 그룹을 나타내는 섹션을 설정합니다.",
+        "element": "블록 요소(Blockk Element)",
+        "tag": "닫는 태그 사용(<header> ~ </header>)",
+        "version": "HTML5",
+        "view": "-",
+        "use": "★★★★★",
+        "image": "",
+        "link": "",
+        "definition": [
+          "<header> 태그는 사이트의 소개 및 메뉴 그룹을 나타내는 섹션을 설정합니다.",
+          "<header> 태그에는 제목, 로고, 검색, 아이콘, 저자 정보 등을 포함 할 수 있습니다.",
+          "<header> 태그는 섹션 요소이기 때문에 제목 태그를 포함하여야 하지만 필수사항은 아닙니다."
+        ],
+        "Accessibility": [
+          "<header> 태그는 섹션 요소이기 때문에 제목 태그를 포함하여야 하지만 필수사항은 아닙니다."
+        ],
+        "mdn": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header",
+        "w3c": "https://www.w3schools.com/tags/tag_header.asp"
+      },
+      {
+        "id": 17,
+        "title": "<hr>",
+        "desc": "<hr> 태그는 단락 요소간의 주제별 구분을 설정합니다.",
+        "desc2": "<hr> 태그는 단락 요소간의 주제별 구분을 설정합니다.",
+        "element": "블록 요소(Blockk Element)",
+        "tag": "self-closing(<hr />)",
+        "version": "HTML4",
+        "view": "수평선",
+        "use": "★☆☆☆☆",
+        "image": "",
+        "link": "",
+        "definition": [
+          "<hr> 태그는 단란 요소간의 주제별 구분을 설정합니다.",
+          "<hr> 태그는 연극에서 주제를 구분하거나, 책에서 화제 변경을 구분(horizontal rule)하기 위해 사용합니다.",
+          "<hr> 태그는 시각적인 부분보다 의미론적으로 사용하므로, 시간적인 표현은 CSS를 통해 표현합니다."
+        ],
+        "Accessibility": [
+          "HTML4에서 <hr> 태그는 수평선을 의미하지만, HTML5에서 <hr> 태그는 주제를 분리할 때 사용합니다."
+        ],
+        "mdn": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr",
+        "w3c": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-hr-element"
+      },
+      {
+        "id": 18,
+        "title": "<html>",
+        "desc": "<html> 태그는 웹 문서의 최상위 요소 문서의 루트를 나타냅니다.",
+        "desc2": "<html> 태그는 웹 문서의 최상위 요소 문서의 루트를 나타냅니다.",
+        "element": "-",
+        "tag": "닫는 태그 사용(<html> ~ </html>)",
+        "version": "HTML4",
+        "view": "-",
+        "use": "★★★★★",
+        "image": "",
+        "link": "",
+        "definition": [
+          "<html> 태그는 웹 문서의 최상위 요소 문서의 루트를 나타냅니다.",
+          "<hr> 태그는 연극에서 주제를 구분하거나, 책에서 화제 변경을 구분(horizontal rule)하기 위해 사용합니다.",
+          "<hr> 태그는 시각적인 부분보다 의미론적으로 사용하므로, 시간적인 표현은 CSS를 통해 표현합니다."
+        ],
+        "Accessibility": [
+          "HTML4에서 <hr> 태그는 수평선을 의미하지만, HTML5에서 <hr> 태그는 주제를 분리할 때 사용합니다."
+        ],
+        "mdn": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr",
+        "w3c": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-hr-element"
       }
     ]
   }
